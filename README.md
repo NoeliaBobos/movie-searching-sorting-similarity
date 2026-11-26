@@ -1,62 +1,64 @@
-# Movie Similarity - Movie Recommendation System
+# Searching, Sorting and Similarity in Movie Data
 
-## About the Project
+### A Movie Recommendation Case Study
 
-This project implements a simple movie recommendation system using Python. It finds movies with similar content based on their genres, keywords and descriptions.
+This project explores three Computational Thinking concepts - Searching, Sorting and Similarity - using the TMDB 5000 Movie Dataset and Python.
 
-The system uses text vectorization and cosine similarity to compare movies and recommend the five most similar titles.
+## Project Overview
+
+The project demonstrates how different computational techniques can be applied to movie data. It focuses on finding specific movies, organizing them based on different criteria and identifying movies with similar characteristics.
+
+### Main Concepts
+
+**1. Searching**
+
+Finding movies based on their titles and genres using Python search and filtering functions.
+
+**2. Sorting**
+
+Organizing movies by popularity and average rating to identify the most popular and highly rated titles.
+
+**3. Similarity**
+
+Comparing movies based on their genres, keywords and descriptions to generate movie recommendations using text vectorization and cosine similarity.
+
+## Technologies and Libraries
+
+- **Python:** Main programming language.
+- **Jupyter Notebook:** Development environment.
+- **Pandas:** Loading, exploring and manipulating movie data.
+- **Scikit-learn:** Text vectorization and similarity calculations.
+- **JSON:** Extracting information from structured genre and keyword fields.
 
 ## Dataset
 
-The project uses the **TMDB 5000 Movie Dataset**, available on Kaggle.
+The project uses the **TMDB 5000 Movie Dataset**, which contains information about 4,803 movies.
 
-The dataset contains information about movies, including:
-- Movie titles
-- Genres
-- Keywords
-- Descriptions (overviews)
+The dataset can be downloaded from [Kaggle - TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata).
 
-## Technologies Used
+## Project Structure
 
-- Python
-- Pandas
-- Scikit-learn
-- Jupyter Notebook
-
-## How It Works
-
-1. Load and explore the movie dataset.
-2. Extract genres and keywords from the dataset.
-3. Combine genres, keywords and movie descriptions into a single text feature.
-4. Convert the text into numerical vectors using `CountVectorizer`.
-5. Calculate similarity scores using `cosine_similarity`.
-6. Recommend the five most similar movies based on the selected title.
-
-## Example
-
-For the movie **Avatar**, the system recommends titles such as:
-- Aliens
-- Moonraker
-- Starship Troopers
-- Mission to Mars
-- Alien³
-
-## Limitations
-
-The system compares words rather than understanding their actual meaning. Because of this, some recommendations may not be relevant. The quality of the results also depends on the information available in the dataset.
+- `case_study.ipynb` - Main project implementation, testing and analysis.
+- `requirements.txt` - Required Python libraries.
+- `README.md` - Project description and instructions.
 
 ## How to Run
 
 1. Clone or download this repository.
-2. Install the required libraries using:
+2. Download the TMDB 5000 Movie Dataset from Kaggle.
+3. Place `tmdb_5000_movies.csv` in the project folder.
+4. Install the required libraries:
 
-   `pip install -r requirements.txt`
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. Open `movie_similarity.ipynb` in Jupyter Notebook.
-4. Run the notebook cells.
+5. Open `case_study.ipynb` in Jupyter Notebook.
+6. Run all cells.
 
 ## References
 
 - [TMDB 5000 Movie Dataset - Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
-- [CountVectorizer Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
-- [Cosine Similarity Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html)
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/)
+- [Python Documentation](https://docs.python.org/3/)
